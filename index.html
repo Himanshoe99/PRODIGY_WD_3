@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="app" class="min-h-screen flex items-center justify-center">
+        <div class="card">
+            <div class="card-content">
+                <div class="header">
+                    <h1 class="title">Tic Tac Toe</h1>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Switch to dark mode">
+                        <i data-lucide="moon"></i>
+                    </button>
+                </div>
+                <div id="menuContent" class="menu-content">
+                    <button id="playHuman" class="btn btn-full">
+                        <i data-lucide="user"></i> Play vs Human
+                    </button>
+                    <button id="playAI" class="btn btn-full">
+                        <i data-lucide="cpu"></i> Play vs Smart AI
+                    </button>
+                </div>
+                <div id="gameContent" class="game-content hidden">
+                    <div id="gameBoard" class="game-board"></div>
+                    <div id="gameStatus" class="game-status"></div>
+                    <div class="game-controls">
+                        <button id="resetGame" class="btn">Reset</button>
+                        <button id="backToMenu" class="btn">Menu</button>
+                    </div>
+                    <div id="aiDifficulty" class="ai-difficulty hidden">
+                        <span class="font-semibold">Difficulty:</span> Challenging
+                    </div>
+                    <div id="streak" class="streak">Streak: 0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

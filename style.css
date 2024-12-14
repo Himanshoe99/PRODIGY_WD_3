@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --card-bg: #f3f4f6;
+    --btn-bg: #e5e7eb;
+    --btn-hover: #d1d5db;
+}
+
+.dark {
+    --bg-color: black;
+    --text-color: white;
+    --card-bg: #111827;
+    --btn-bg: #374151;
+    --btn-hover: #4b5563;
+}
+
+* {
+    font-family: "Poppins", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#playHuman{
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+#playAI{
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 28rem;
+    margin: 0 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.btn-full {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.game-cell {
+    height: 5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.game-status {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.game-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.ai-difficulty {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.streak {
+    text-align: center;
+    font-weight: 600;
+    color: #FFA500;
+}
+
+.hidden {
+    display: none;
+}
+
